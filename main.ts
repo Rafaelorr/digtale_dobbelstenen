@@ -49,6 +49,7 @@ input.onButtonPressed(Button.AB, function () {
     basic.showString("aantal")
     basic.pause(100)
     basic.showString("" + (aantal_dobbelstenen))
+    basic.pause(10)
 })
 input.onButtonPressed(Button.B, function () {
     if (aantal_dobbelstenen == 1) {
