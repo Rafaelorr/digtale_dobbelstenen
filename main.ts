@@ -69,5 +69,4 @@ aantal_dobbelstenen = 1
 rol_resulaat = 1
 basic.forever(function () {
     basic.showString("" + (rol_resulaat))
-    basic.pause(100)
 })
