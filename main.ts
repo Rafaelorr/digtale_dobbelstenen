@@ -1,11 +1,6 @@
 input.onButtonPressed(Button.A, function () {
-    if (aantal_dobbelstenen == 100) {
-        basic.pause(10)
-    } else {
-        aantal_dobbelstenen += 1
-    }
+    aantal_dobbelstenen += 1
     basic.showString("aantal")
-    basic.pause(450)
     basic.showString("" + (aantal_dobbelstenen))
 })
 input.onGesture(Gesture.Shake, function () {
@@ -40,25 +35,20 @@ input.onButtonPressed(Button.AB, function () {
         soort_dobbelsteen = 2
         aantal_dobbelstenen = 1
     } else {
-        basic.pause(10)
+    	
     }
     basic.showString("soort")
-    basic.pause(200)
     basic.showString("" + (soort_dobbelsteen))
-    basic.pause(200)
     basic.showString("aantal")
-    basic.pause(100)
     basic.showString("" + (aantal_dobbelstenen))
-    basic.pause(10)
 })
 input.onButtonPressed(Button.B, function () {
     if (aantal_dobbelstenen == 1) {
-        basic.pause(10)
+    	
     } else {
         aantal_dobbelstenen += -1
     }
     basic.showString("aantal")
-    basic.pause(450)
     basic.showString("" + (aantal_dobbelstenen))
 })
 let rol_resulaat = 0
